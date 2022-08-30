@@ -1,0 +1,40 @@
+
+*{
+    text-align: center;
+}
+
+.sectionfull{
+    width: 70%;
+    height: fit-content;
+    margin:auto;
+    background-color:rgb(147, 151, 151);
+    padding-bottom: 2rem;
+}
+.intro h2{
+   padding-top: 2rem;
+}
+.intro p{
+    text-align: center;
+    font-size: larger;
+}
+.image2 img{
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+.bio h2,p{
+   text-align: left;
+   padding-left: 4rem;
+   padding-right: 1.5rem;
+}
+.bio p{
+    font-size: larger;
+    line-height: 150%;
+}
+@media screen and (max-width: 800px) {
+    .intro p{
+        padding-right: 4rem;
+    }
+    .sectionfull{
+        width: fit-content;
+    }
+  }
