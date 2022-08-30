@@ -1,0 +1,79 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.title h1{
+    margin: -120%;
+    margin-left: 100%;
+    text-shadow: 3px 5px rgb(124, 120, 120);    
+    font-weight: bolder;
+}
+
+.container{
+    /* height: 55vh; */
+    width: 40%;
+    margin-top: 5%;
+    padding-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(67, 67, 67);
+    text-align: center;
+    box-shadow: 12px 12px 12px rgb(160, 141, 141),
+                -12px -12px 12px rgb(144, 136, 136);
+}
+.display #screen{
+    width: 80%;
+    height: 70px;
+    margin-top: 3%;
+    box-shadow: inset 8px 8px 8px,rgb(67, 67, 67)
+                inset -8px -8px 8px rgb(193, 129, 129);
+    font-size: 45px;
+    border-radius: 4px;
+    text-align: right;
+}
+.btns{
+    width: 100%;
+    display: inline-block;
+    margin-top: 1.7rem ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btns .row button{
+    height: 30px;
+    width:90px;
+    margin: 5px;
+}
+@media only screen and (max-width: 960px){
+    .title{
+        margin-left: -30%;
+    }
+    .container{
+        width: 95%;
+        margin-top: 5rem;
+        margin-left: -9%;
+    }
+}
+/* DESIGNING BUTTONS */
+.bs{
+    border: none;
+    background-color: rgb(226, 8, 8);
+    
+}
+.calc{
+    background-color: green;
+    border: none;
+}
+.AC{
+    background-color: pink;
+    border: none;
+    
+}
+.btnN{
+    background-color: rgb(141, 137, 137);
+    border: none;
+}

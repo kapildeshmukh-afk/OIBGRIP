@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- LINKING CSS -->
+     <link rel="stylesheet" href="styles.css">
+     <!-- ENDED -->
+ </head>
+    <title>Calculator</title>
+   
+<body>
+    <div class="title"><h1>CALCULATOR</h1></div>
+    
+    <div class="container">
+        <h2 style="color: #fff;">STANDARD[ ]</h2>
+        <div class="display">
+            <input type="text" name="screen" id="screen" placeholder="0">
+        </div>
+        <div class="btns">
+            <div class="row">
+                 <button class="bs" onclick="backSpace()">&#9003</button>
+                 <button class="brackets">(</button>
+                 <button class="brackets">)</button>
+                 <button class="calc" onclick="screen.value = eval(screen.value)">=</button>
+            </div>
+            <div class="row">
+                <button class="btn">+</button>
+                <button class="btn btnN ">1</button>
+                <button class="btnN btn">2</button>
+                <button class="btnN btn">3</button>
+           </div>
+           <div class="row">
+            <button class="btn">-</button>
+            <button class="btnN btn">4</button>
+            <button class="btnN btn">5</button>
+            <button class="btnN btn">6</button>
+            </div>
+        <div class="row">
+            <button class="btn">/</button>
+            <button class="btnN btn">7</button>
+            <button class="btnN btn">8</button>
+            <button class="btnN btn">9</button>
+        </div>
+        <div class="row">
+            <button class="btn">x</button>
+            <button onclick="powerOf()" >^</button>
+            <button  onclick="screen.value='3.14159'">&#960</button>
+            <button class="btnN btn">0</button>
+        </div>
+        <div class="row">
+            <button onClick="sqrt()">√</button>
+            <button class="btn">.</button>
+            <button onClick="log()">log</button>
+            <button class="AC" onClick="screen.value =''">AC</button>
+        </div>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
